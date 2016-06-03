@@ -1,5 +1,14 @@
 @import "_oa";
 
+@include font-face("icomoon", font-files("icomoon/icomoon.eot", "icomoon/icomoon.woff", "icomoon/icomoon.ttf", "icomoon/icomoon.svg"));
+[class^="icon-"], [class*=" icon-"] {font-family: 'icomoon', "Roboto", "微軟正黑體", 'Monaco';speak: none;font-style: normal;font-weight: normal;font-variant: normal;text-transform: none;line-height: 1;@include font-smoothing(antialiased);}
+
+
+.icon-checkbox-checked:before {
+    content: "\e907";
+}
+
+
    .tcp {
      height: 900px;
      background-image: url(../img/pic.png);
@@ -13,19 +22,83 @@
      .tcpa {
       display: inline-block;
       float: right;
+      width: 40%;
       height: 100%;
-      width: 50%;
 
-      background-color: rgba(0, 0, 255, 0.2);
+      background-image: url(../img/product.png);
+      background-repeat:no-repeat;
+      background-position: 195px 591px;
 
       .tcpaa {
         float: left;
-      }
+        width: 100%;
+        height: 50%;
 
-      .tcpab {
-        float: left;
-        right: 0;
-        bottom: 0;
+        padding: 30px 30px 0 30px;
+
+        img {
+          height: auto;
+          max-width: 100%;
+          padding-bottom: 20px;
+        }
+
+        div {
+          width: 100%;
+          border-top: 1px solid rgba(202, 61, 144, 1.00);
+
+          span {
+            display: inline-block;
+            font-size: 3em;
+            color: rgba(19, 0, 0, 1.00);
+            padding: 15px 0;
+          }
+        }
+
       }
      }
    }
+
+
+   .mcs {
+        padding-top: 35px;
+        border-bottom: 1px solid rgba(202, 61, 144, 1.00);
+
+        @include split-left(35%, '.mcsa', '.mcsb');
+
+        .mcsa {
+          float: left;
+          padding:0 0 10px 15px;
+          border-bottom: 3px solid rgba(202, 61, 144, 1.00);
+
+          img {
+            float: left;
+            height: auto;
+            max-width: 100%;
+          }
+
+          .store {
+            float: left;
+            width: 75%;
+            padding:10px 0 0 20px;
+
+            font-size: 1.4em;
+            font-weight: bolder;
+            color: rgba(18, 18, 18, 1.00);
+            text-align: left;
+          }
+       }
+
+       .mcsb {
+        float: left;
+        text-align: left;
+        padding-left: 30px;
+
+        span {
+          float: left;
+          font-size: 1.2em;
+          color: #121212;
+          padding: 5px 0 0 10px;
+        }
+      }
+    }
+

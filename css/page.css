@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * @author      OA Wu <comdan66@gmail.com>
  * @copyright   Copyright (c) 2016 OA Wu Design
@@ -42,6 +43,29 @@
  * @author      OA Wu <comdan66@gmail.com>
  * @copyright   Copyright (c) 2016 OA Wu Design
  */
+@font-face {
+  font-family: "icomoon";
+  src: url('/oaf2e/font/icomoon/icomoon.eot?1464949318') format('embedded-opentype'), url('/oaf2e/font/icomoon/icomoon.woff?1464949318') format('woff'), url('/oaf2e/font/icomoon/icomoon.ttf?1464949318') format('truetype'), url('/oaf2e/font/icomoon/icomoon.svg?1464949318') format('svg');
+}
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon', "Roboto", "微軟正黑體", 'Monaco';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -moz-osx-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}
+
+.icon-checkbox-checked:before {
+  content: "\e907";
+}
+
 .tcp {
   height: 900px;
   background-image: url(../img/pic.png);
@@ -60,15 +84,86 @@
 .tcp .tcpa {
   display: inline-block;
   float: right;
+  width: 40%;
   height: 100%;
-  width: 50%;
-  background-color: rgba(0, 0, 255, 0.2);
+  background-image: url(../img/product.png);
+  background-repeat: no-repeat;
+  background-position: 195px 591px;
 }
 .tcp .tcpa .tcpaa {
   float: left;
+  width: 100%;
+  height: 50%;
+  padding: 30px 30px 0 30px;
 }
-.tcp .tcpa .tcpab {
+.tcp .tcpa .tcpaa img {
+  height: auto;
+  max-width: 100%;
+  padding-bottom: 20px;
+}
+.tcp .tcpa .tcpaa div {
+  width: 100%;
+  border-top: 1px solid #ca3d90;
+}
+.tcp .tcpa .tcpaa div span {
+  display: inline-block;
+  font-size: 3em;
+  color: #130000;
+  padding: 15px 0;
+}
+
+.mcs {
+  padding-top: 35px;
+  border-bottom: 1px solid #ca3d90;
+  *zoom: 1;
+}
+.mcs:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+.mcs .mcsa, .mcs .mcsb {
   float: left;
-  right: 0;
-  bottom: 0;
+  position: relative;
+  display: inline-block;
+}
+.mcs .mcsb {
+  float: right;
+}
+.mcs .mcsa {
+  width: 35%;
+}
+.mcs .mcsb {
+  width: calc(100% - 35%);
+}
+.mcs .mcsa {
+  float: left;
+  padding: 0 0 10px 15px;
+  border-bottom: 3px solid #ca3d90;
+}
+.mcs .mcsa img {
+  float: left;
+  height: auto;
+  max-width: 100%;
+}
+.mcs .mcsa .store {
+  float: left;
+  width: 75%;
+  padding: 10px 0 0 20px;
+  font-size: 1.4em;
+  font-weight: bolder;
+  color: #121212;
+  text-align: left;
+}
+.mcs .mcsb {
+  float: left;
+  text-align: left;
+  padding-left: 30px;
+}
+.mcs .mcsb span {
+  float: left;
+  font-size: 1.2em;
+  color: #121212;
+  padding: 5px 0 0 10px;
 }

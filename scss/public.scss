@@ -1,5 +1,9 @@
 @import "_oa";
 
+@include font-face("icomoon", font-files("icomoon/icomoon.eot", "icomoon/icomoon.woff", "icomoon/icomoon.ttf", "icomoon/icomoon.svg"));
+[class^="icon-"], [class*=" icon-"] {font-family: 'icomoon', "Roboto", "微軟正黑體", 'Monaco';speak: none;font-style: normal;font-weight: normal;font-variant: normal;text-transform: none;line-height: 1;@include font-smoothing(antialiased);}
+
+
 @include font-face("Monaco", font-files("monaco/monaco.ttf", "monaco/monaco.otf"));
 // @include font-face("icomoon", font-files("icomoon/icomoon.eot", "icomoon/icomoon.woff", "icomoon/icomoon.ttf", "icomoon/icomoon.svg"));
 // [class^="icon-"], [class*=" icon-"] {
