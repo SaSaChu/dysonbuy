@@ -1,0 +1,74 @@
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+/**
+ * @author      OA Wu <comdan66@gmail.com>
+ * @copyright   Copyright (c) 2016 OA Wu Design
+ */
+.tcp {
+  height: 900px;
+  background-image: url(../img/pic.png);
+  background-repeat: no-repeat;
+  background-color: #faf8f9;
+  position: relative;
+  border-bottom: 5px solid #c93e8d;
+  *zoom: 1;
+}
+.tcp:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+.tcp .tcpa {
+  display: inline-block;
+  float: right;
+  height: 100%;
+  width: 50%;
+  background-color: rgba(0, 0, 255, 0.2);
+}
+.tcp .tcpa .tcpaa {
+  float: left;
+}
+.tcp .tcpa .tcpab {
+  float: left;
+  right: 0;
+  bottom: 0;
+}

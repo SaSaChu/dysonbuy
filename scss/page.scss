@@ -1,0 +1,31 @@
+@import "_oa";
+
+   .tcp {
+     height: 900px;
+     background-image: url(../img/pic.png);
+     background-repeat:no-repeat;
+     background-color:rgba(250, 248, 249, 1.00);
+     position: relative;
+     border-bottom: 5px solid rgba(201, 62, 141, 1.00);
+
+     @include clearfix();
+
+     .tcpa {
+      display: inline-block;
+      float: right;
+      height: 100%;
+      width: 50%;
+
+      background-color: rgba(0, 0, 255, 0.2);
+
+      .tcpaa {
+        float: left;
+      }
+
+      .tcpab {
+        float: left;
+        right: 0;
+        bottom: 0;
+      }
+     }
+   }

@@ -78,7 +78,7 @@ html body {
   width: 100%;
   height: 100%;
   font-size: medium;
-  font-family: Monaco, "微軟正黑體", "Microsoft JhengHei";
+  font-family: "微軟正黑體", Monaco,  "Microsoft JhengHei";
   background: white;
   color: rgba(50, 50, 50, 0.8);
   -moz-osx-font-smoothing: antialiased;
@@ -93,8 +93,142 @@ html header {
 html header > div {
   margin: 0 auto;
   width: 1140px;
-  height: 220px;
-  background-color: rgba(0, 0, 255, 0.2);
+  height: 100%;
+}
+html header > div .ta {
+  height: 145px;
+  border-bottom: 3px solid #282828;
+  padding-top: 25px;
+}
+html header > div .ta img {
+  margin: 0 auto;
+  height: auto;
+  max-width: 100%;
+}
+html header > div .tb {
+  margin: 0 auto;
+  width: 50%;
+  height: 80px;
+  *zoom: 1;
+}
+html header > div .tb:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+html header > div .tb > div {
+  float: left;
+  width: calc(100% / 3);
+  height: 100%;
+  padding-top: 30px;
+  text-align: center;
+}
+html header > div .tb > div a {
+  display: block;
+  font-size: 1em;
+  color: #5b5b5b;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+html header > div .tb > div a:hover {
+  color: #c93e8d;
+  border-bottom: 3px solid #c93e8d;
+}
+html header > div .tb > div .tba {
+  color: #c93e8d;
+  border-bottom: 3px solid #c93e8d;
+}
+html header > div .tb > div + div a {
+  position: relative;
+}
+html header > div .tb > div + div a:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 1px;
+  height: 100%;
+  background-color: #8f8f8f;
+}
+html header > div .tc {
+  height: 900px;
+  background-image: url(../img/pic.png);
+  background-repeat: no-repeat;
+  background-color: #faf8f9;
+  position: relative;
+}
+html header > div .tc .tca {
+  width: 100%;
+  height: 315px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+html header > div .tc .tca .tcaa {
+  float: right;
+  width: 50%;
+  height: 100%;
+  margin-right: 20px;
+}
+html header > div .tc .tca .tcaa > div {
+  width: 100%;
+  *zoom: 1;
+}
+html header > div .tc .tca .tcaa > div:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+html header > div .tc .tca .tcaa > div .tcaaa {
+  border-bottom: 1px solid #ca3d90;
+  padding: 15px 0;
+}
+html header > div .tc .tca .tcaa > div .tcaaa img {
+  height: auto;
+  max-width: 100%;
+}
+html header > div .tc .tca .tcaa > div span {
+  display: inline-block;
+  font-size: 4em;
+  color: #130000;
+  padding: 15px 0;
+}
+html header > div .tc .tca .tcaa > div .tcaab {
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  border: 3px solid #ca3d90;
+  height: 80px;
+}
+html header > div .tc .tca .tcaa > div .tcaab span {
+  float: left;
+  width: 50%;
+  font-size: 2.2em;
+  color: #ca3d90;
+  text-align: left;
+  padding: 13px 3px 10px 25px;
+}
+html header > div .tc .tca .tcaa > div .tcaab a {
+  float: left;
+  width: 50%;
+  height: 100%;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  background-color: #ca3d90;
+  padding: 10px 0 0 30px;
+  background-image: url(../img/arrow.png);
+  background-repeat: no-repeat;
+  background-position: 20px 13px;
+  font-size: 2.4em;
+  color: white;
+  text-decoration: none;
+}
+html header > div .tc .tca .tcaa > div .tcaab a:hover {
+  background-color: #ed2e9a;
 }
 html #middle {
   width: 100%;
@@ -102,8 +236,133 @@ html #middle {
 html #middle > div {
   margin: 0 auto;
   width: 1140px;
-  height: 800px;
-  background-color: rgba(255, 0, 0, 0.2);
+  height: 100%;
+}
+html #middle > div .ma {
+  margin: 80px 0;
+  border-bottom: 1px solid #ca3d90;
+  position: relative;
+}
+html #middle > div .ma span {
+  display: inline-block;
+  position: absolute;
+  margin: 0 auto;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  padding: 15px 15px;
+  top: -33px;
+  left: 280px;
+  background-color: #ffffff;
+  border: 2px solid #ca3d90;
+  font-size: 1.8em;
+  color: #ca3d90;
+}
+html #middle > div .mb {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e3e5e5;
+  font-size: 1.6em;
+  color: #010202;
+  line-height: 1.6em;
+}
+html #middle > div .mb b {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+html #middle > div .mc {
+  padding-top: 35px;
+  border-bottom: 1px solid #ca3d90;
+  *zoom: 1;
+}
+html #middle > div .mc:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+html #middle > div .mc .mca, html #middle > div .mc .mcb {
+  float: left;
+  position: relative;
+  display: inline-block;
+}
+html #middle > div .mc .mcb {
+  float: right;
+}
+html #middle > div .mc .mca {
+  width: 25%;
+}
+html #middle > div .mc .mcb {
+  width: calc(100% - 25%);
+}
+html #middle > div .mc .mca {
+  float: left;
+  padding: 0 0 10px 30px;
+  border-bottom: 3px solid #ca3d90;
+}
+html #middle > div .mc .mca img {
+  float: left;
+  height: auto;
+  max-width: 100%;
+}
+html #middle > div .mc .mca span {
+  float: left;
+  font-size: 1.4em;
+  font-weight: bolder;
+  color: #121212;
+  padding: 3px 0 0 10px;
+}
+html #middle > div .mc .mcb {
+  float: left;
+  text-align: left;
+  padding-left: 30px;
+}
+html #middle > div .mc .mcb span {
+  float: left;
+  font-size: 1.2em;
+  color: #121212;
+  padding: 5px 0 0 10px;
+}
+html #middle > div .mcaa {
+  display: block;
+  float: right;
+  width: 71%;
+  padding-top: 8px;
+  font-size: .8em;
+  color: #7c7c7c;
+  text-align: left;
+}
+html #middle > div .mcaa.red {
+  color: #fd3240;
+}
+html #middle > div .mcc {
+  margin-top: 50px;
+  height: 100%;
+  border-top: 1px solid #e3e5e5;
+  padding-bottom: 15px;
+  *zoom: 1;
+}
+html #middle > div .mcc:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+html #middle > div .mcc div {
+  float: left;
+  display: block;
+  width: 100%;
+  padding: 15px 0 0 0;
+  font-size: 1em;
+  font-weight: bolder;
+  color: #ca3d90;
+  text-align: left;
+}
+html #middle > div .mcc div.mcca {
+  float: left;
+  font-size: .8em;
+  color: #727272;
+  text-align: left;
+  line-height: 2em;
 }
 html footer {
   width: 100%;
@@ -112,5 +371,29 @@ html footer > div {
   margin: 0 auto;
   width: 1140px;
   height: 90px;
-  background-color: rgba(0, 128, 0, 0.2);
+  border-top: 3px solid #282828;
+  padding-top: 25px;
+  *zoom: 1;
+}
+html footer > div:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+html footer > div .a {
+  float: left;
+  width: 355px;
+  height: 56px;
+}
+html footer > div .a img {
+  height: auto;
+  max-width: 100%;
+}
+html footer > div span {
+  line-height: 64px;
+  float: left;
+  font-size: 0.7em;
+  padding: 0 13px;
+  color: #333333;
 }

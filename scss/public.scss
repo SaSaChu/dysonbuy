@@ -36,12 +36,14 @@ html {
     width: 100%;
     height: 100%;
     font-size: medium;
-    font-family: Monaco, "微軟正黑體", "Microsoft JhengHei";
+    font-family: "微軟正黑體", Monaco,  "Microsoft JhengHei";
     background: rgba(255, 255, 255, 1.00);
     color: rgba(50, 50, 50, 0.8);
 
     @include font-smoothing(antialiased);
   }
+
+
 
   header {
     width: 100%;
@@ -49,11 +51,162 @@ html {
     > div {
       margin: 0 auto;
       width: $allwidth;
-      height: 220px;
+      height: 100%;
 
-      background-color: rgba(0, 0, 255, 0.2);
+      .ta {
+        height: 145px;
+        border-bottom: 3px solid #282828;
+        padding-top: 25px;
+
+        img {
+          margin: 0 auto;
+          height: auto;
+          max-width: 100%;
+        }
+      }
+
+      .tb {
+        margin: 0 auto;
+        width: 50%;
+        height: 80px;
+
+        @include clearfix();
+
+        > div {
+          float: left;
+          width: calc(100% / 3);
+          height: 100%;
+          padding-top: 30px;
+
+          text-align: center;
+
+          a {
+            display: block;
+            font-size: 1em;
+            color:rgba(91, 91, 91, 1.00);
+            text-decoration: none;
+            padding-bottom: 5px;
+
+            &:hover {
+              color:rgba(201, 62, 141, 1.00);
+              border-bottom: 3px solid rgba(201, 62, 141, 1.00);
+            }
+          }
+
+          .tba {
+            color:rgba(201, 62, 141, 1.00);
+            border-bottom: 3px solid rgba(201, 62, 141, 1.00);
+          }
+
+          + div {
+
+            a {
+              position: relative;
+
+              &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                display: inline-block;
+                width: 1px;
+                height: 100%;
+                background-color: rgba(143, 143, 143, 1.00);
+              }
+            }
+          }
+        }
+      }
+
+      .tc {
+        height: 900px;
+        background-image: url(../img/pic.png);
+        background-repeat:no-repeat;
+        background-color:rgba(250, 248, 249, 1.00);
+        position: relative;
+
+        .tca {
+          width: 100%;
+          height: 315px;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+
+          .tcaa {
+            float: right;
+            width: 50%;
+            height: 100%;
+            margin-right: 20px;
+
+            > div {
+              width: 100%;
+              @include clearfix();
+
+              .tcaaa {
+                border-bottom: 1px solid rgba(202, 61, 144, 1.00);
+                padding: 15px 0;
+
+                img {
+                  height: auto;
+                  max-width: 100%;
+                }
+              }
+
+
+              span {
+                display: inline-block;
+                font-size: 4em;
+                color: rgba(19, 0, 0, 1.00);
+                padding: 15px 0;
+              }
+
+
+              .tcaab {
+                @include border-radius(40px);
+                border:3px solid rgba(202, 61, 144, 1.00);
+                height: 80px;
+
+                span {
+                  float: left;
+                  width: 50%;
+                  font-size: 2.2em;
+                  color: rgba(202, 61, 144, 1.00);
+                  text-align: left;
+                  padding: 13px 3px 10px 25px;
+                }
+
+                a {
+                  float: left;
+                  width: 50%;
+                  height: 100%;
+
+
+                  @include border-radius(40px);
+                  background-color: rgba(202, 61, 144, 1.00);
+                  padding: 10px 0 0 30px;
+
+                  background-image:url(../img/arrow.png);
+                  background-repeat: no-repeat;
+                  background-position: 20px 13px;
+
+                  font-size: 2.4em;
+                  color: rgba(255, 255, 255, 1.00);
+                  text-decoration: none;
+
+                  &:hover {
+                    background-color: rgba(237, 46, 154, 1.00);
+                  }
+
+                }
+              }
+            }
+
+          }
+        }
+      }
     }
   }
+
 
   #middle {
     width: 100%;
@@ -61,11 +214,134 @@ html {
     > div {
       margin: 0 auto;
       width: $allwidth;
-      height: 800px;
+      height: 100%;
 
-      background-color: rgba(255, 0, 0, 0.2);
+      .ma {
+        margin: 80px 0;
+        border-bottom: 1px solid rgba(202, 61, 144, 1.00);
+
+        position: relative;
+
+        span {
+          display: inline-block;
+          position: absolute;
+          margin: 0 auto;
+          @include border-radius(50px);
+
+          padding: 15px 15px;
+          top: -33px;
+          left: 280px;
+          background-color: #ffffff;
+          border: 2px solid rgba(202, 61, 144, 1.00);
+
+          font-size: 1.8em;
+          color: rgba(202, 61, 144, 1.00);
+        }
+      }
+
+      .mb {
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgba(227, 229, 229, 1.00);
+
+        font-size: 1.6em;
+        color: rgba(1, 2, 2, 1.00);
+        line-height: 1.6em;
+
+        b {
+          font-weight: bolder;
+          text-decoration: underline;
+        }
+      }
+
+      .mc {
+        padding-top: 35px;
+        border-bottom: 1px solid rgba(202, 61, 144, 1.00);
+
+        @include split-left(25%, '.mca', '.mcb');
+
+        .mca {
+          float: left;
+          padding:0 0 10px 30px;
+          border-bottom: 3px solid rgba(202, 61, 144, 1.00);
+
+          img {
+            float: left;
+            height: auto;
+            max-width: 100%;
+          }
+
+          span {
+            float: left;
+            font-size: 1.4em;
+            font-weight: bolder;
+            color: rgba(18, 18, 18, 1.00);
+            padding: 3px 0 0 10px;
+          }
+        }
+
+        .mcb {
+          float: left;
+          text-align: left;
+          padding-left: 30px;
+
+          span {
+            float: left;
+            font-size: 1.2em;
+            color: #121212;
+            padding: 5px 0 0 10px;
+          }
+        }
+      }
+
+      .mcaa {
+        display: block;
+        float: right;
+        width: 71%;
+
+        padding-top: 8px;
+
+        font-size: .8em;
+        color: rgba(124, 124, 124, 1.00);
+        text-align: left;
+
+        &.red {
+          color: rgba(253, 50, 64, 1.00);
+        }
+      }
+
+      .mcc {
+        margin-top: 50px;
+        height: 100%;
+        border-top:1px solid rgb(227, 229, 229);
+        padding-bottom: 15px;
+
+        @include clearfix();
+
+        div {
+          float: left;
+
+          display: block;
+          width: 100%;
+          padding: 15px 0 0 0;
+
+          font-size: 1em;
+          font-weight: bolder;
+          color: rgba(202, 61, 144, 1.00);
+          text-align: left;
+
+          &.mcca {
+            float: left;
+            font-size: .8em;
+            color: rgba(114, 114, 114, 1.00);
+            text-align: left;
+            line-height: 2em;
+          }
+        }
+      }
+
     }
   }
+
 
   footer {
     width: 100%;
@@ -75,7 +351,32 @@ html {
       width: $allwidth;
       height: 90px;
 
-      background-color: rgba(0, 128, 0, 0.2);
+      border-top: 3px solid #282828;
+      padding-top: 25px;
+
+      @include clearfix();
+
+      .a {
+        float: left;
+        width: 355px;
+        height: 56px;
+
+        img {
+          height: auto;
+          max-width: 100%;
+        }
+      }
+
+
+      span {
+        line-height: 64px;
+        float: left;
+        font-size: 0.7em;
+        padding: 0 13px;
+        color: #333333;
+      }
+
+
     }
   }
 
