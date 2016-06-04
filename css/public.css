@@ -45,7 +45,7 @@
  */
 @font-face {
   font-family: "icomoon";
-  src: url('/oaf2e/font/icomoon/icomoon.eot?1464949318') format('embedded-opentype'), url('/oaf2e/font/icomoon/icomoon.woff?1464949318') format('woff'), url('/oaf2e/font/icomoon/icomoon.ttf?1464949318') format('truetype'), url('/oaf2e/font/icomoon/icomoon.svg?1464949318') format('svg');
+  src: url('/dysonbuy/font/icomoon/icomoon.eot?1464949318') format('embedded-opentype'), url('/dysonbuy/font/icomoon/icomoon.woff?1464949318') format('woff'), url('/dysonbuy/font/icomoon/icomoon.ttf?1464949318') format('truetype'), url('/dysonbuy/font/icomoon/icomoon.svg?1464949318') format('svg');
 }
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon', "Roboto", "微軟正黑體", 'Monaco';
@@ -64,7 +64,7 @@
 
 @font-face {
   font-family: "Monaco";
-  src: url('/oaf2e/font/monaco/monaco.ttf?1457875218') format('truetype'), url('/oaf2e/font/monaco/monaco.otf?1457875218') format('opentype');
+  src: url('/dysonbuy/font/monaco/monaco.ttf?1457875218') format('truetype'), url('/dysonbuy/font/monaco/monaco.otf?1457875218') format('opentype');
 }
 *, *:after, *:before {
   vertical-align: top;
@@ -180,49 +180,46 @@ html header > div .tc {
 }
 html header > div .tc .tca {
   width: 100%;
-  height: 315px;
   position: absolute;
   left: 0;
   bottom: 0;
-}
-html header > div .tc .tca .tcaa {
-  float: right;
-  width: 50%;
-  height: 100%;
-  margin-right: 20px;
-}
-html header > div .tc .tca .tcaa > div {
-  width: 100%;
   *zoom: 1;
+  padding-right: 20px;
+  padding-bottom: 20px;
 }
-html header > div .tc .tca .tcaa > div:after {
+html header > div .tc .tca:after {
   display: table;
   content: "";
   line-height: 0;
   clear: both;
 }
-html header > div .tc .tca .tcaa > div .tcaaa {
+html header > div .tc .tca .tcaa {
+  float: right;
+  width: 50%;
+}
+html header > div .tc .tca .tcaa .tcaaa {
   border-bottom: 1px solid #ca3d90;
   padding: 15px 0;
 }
-html header > div .tc .tca .tcaa > div .tcaaa img {
+html header > div .tc .tca .tcaa .tcaaa img {
   height: auto;
   max-width: 100%;
 }
-html header > div .tc .tca .tcaa > div span {
+html header > div .tc .tca .tcaa span {
   display: inline-block;
   font-size: 4em;
   color: #130000;
   padding: 15px 0;
 }
-html header > div .tc .tca .tcaa > div .tcaab {
+html header > div .tc .tca .tcaa .tcaab {
   -moz-border-radius: 40px;
   -webkit-border-radius: 40px;
   border-radius: 40px;
   border: 3px solid #ca3d90;
   height: 80px;
+  overflow: hidden;
 }
-html header > div .tc .tca .tcaa > div .tcaab span {
+html header > div .tc .tca .tcaa .tcaab span {
   float: left;
   width: 50%;
   font-size: 2.2em;
@@ -230,26 +227,32 @@ html header > div .tc .tca .tcaa > div .tcaab span {
   text-align: left;
   padding: 13px 3px 10px 25px;
 }
-html header > div .tc .tca .tcaa > div .tcaab a {
+html header > div .tc .tca .tcaa .tcaab a {
   float: left;
   width: 50%;
   height: 100%;
-  -moz-border-radius: 40px;
-  -webkit-border-radius: 40px;
-  border-radius: 40px;
+  -moz-border-radius-topleft: 40px;
+  -webkit-border-top-left-radius: 40px;
+  border-top-left-radius: 40px;
+  -moz-border-radius-bottomleft: 40px;
+  -webkit-border-bottom-left-radius: 40px;
+  border-bottom-left-radius: 40px;
   background-color: #ca3d90;
   padding: 10px 0 0 30px;
-  background-image: url(../img/arrow.png);
+  background-image: url('/dysonbuy/img/arrow.png');
   background-repeat: no-repeat;
   background-position: 20px 13px;
   font-size: 2.4em;
   color: white;
   text-decoration: none;
 }
-html header > div .tc .tca .tcaa > div .tcaab a:hover {
+html header > div .tc .tca .tcaa .tcaab a:hover {
   background-color: #ed2e9a;
 }
 html #middle {
+  width: 100%;
+  margin-top: 80px;
+  display: inline-block;
   width: 100%;
 }
 html #middle > div {
@@ -258,7 +261,7 @@ html #middle > div {
   height: 100%;
 }
 html #middle > div .ma {
-  margin: 80px 0;
+  margin-bottom: 80px;
   border-bottom: 1px solid #ca3d90;
   position: relative;
 }
@@ -276,6 +279,14 @@ html #middle > div .ma span {
   border: 2px solid #ca3d90;
   font-size: 1.8em;
   color: #ca3d90;
+}
+html #middle > div .ma span.d {
+  top: -33px;
+  left: 400px;
+}
+html #middle > div .ma span.l {
+  top: -33px;
+  left: 465px;
 }
 html #middle > div .mb {
   padding-bottom: 30px;
@@ -314,9 +325,15 @@ html #middle > div .mc .mcb {
   width: calc(100% - 25%);
 }
 html #middle > div .mc .mca {
-  float: left;
   padding: 0 0 10px 30px;
   border-bottom: 3px solid #ca3d90;
+  *zoom: 1;
+}
+html #middle > div .mc .mca:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
 }
 html #middle > div .mc .mca img {
   float: left;
@@ -331,12 +348,10 @@ html #middle > div .mc .mca span {
   padding: 3px 0 0 10px;
 }
 html #middle > div .mc .mcb {
-  float: left;
   text-align: left;
   padding-left: 30px;
 }
 html #middle > div .mc .mcb span {
-  float: left;
   font-size: 1.2em;
   color: #121212;
   padding: 5px 0 0 10px;
@@ -385,6 +400,7 @@ html #middle > div .mcc div.mcca {
 }
 html footer {
   width: 100%;
+  margin-top: 80px;
 }
 html footer > div {
   margin: 0 auto;

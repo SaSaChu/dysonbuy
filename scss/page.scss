@@ -60,45 +60,240 @@
 
 
    .mcs {
-        padding-top: 35px;
-        border-bottom: 1px solid rgba(202, 61, 144, 1.00);
+      padding-top: 35px;
+      border-bottom: 1px solid rgba(202, 61, 144, 1.00);
 
-        @include split-left(35%, '.mcsa', '.mcsb');
+      @include split-left(35%, '.mcsa', '.mcsb');
 
-        .mcsa {
-          float: left;
-          padding:0 0 10px 15px;
-          border-bottom: 3px solid rgba(202, 61, 144, 1.00);
-
-          img {
-            float: left;
-            height: auto;
-            max-width: 100%;
-          }
-
-          .store {
-            float: left;
-            width: 75%;
-            padding:10px 0 0 20px;
-
-            font-size: 1.4em;
-            font-weight: bolder;
-            color: rgba(18, 18, 18, 1.00);
-            text-align: left;
-          }
-       }
-
-       .mcsb {
+      .mcsa {
         float: left;
-        text-align: left;
-        padding-left: 30px;
+        padding:0 0 10px 15px;
+        border-bottom: 3px solid rgba(202, 61, 144, 1.00);
+        @include clearfix();
 
-        span {
+        img {
           float: left;
-          font-size: 1.2em;
-          color: #121212;
-          padding: 5px 0 0 10px;
+          height: auto;
+          width: 86px;
+        }
+
+        .store {
+          float: left;
+          width: calc(100% - 86px);
+          padding:10px 0 0 20px;
+
+          font-size: 1.4em;
+          font-weight: bolder;
+          color: rgba(18, 18, 18, 1.00);
+          text-align: left;
+        }
+      }
+
+      .mcsb {
+        float: left;
+        text-align: center;
+        padding: 5px 0;
+
+        a, .btn {
+          margin: 0 80px;
+          display: inline-block;
+          width: 60%;
+          @include border-radius(10px);
+          border-bottom: 5px solid rgba(157, 26, 108, 1.00);
+          background-color: rgba(200, 62, 142, 1.00);
+
+          font-size: 1.4em;
+          font-weight: bolder;
+          color: rgba(255, 255, 255, 1.00);
+          padding: 20px 10px;
+          text-align: center;
+          text-decoration: none;
+        }
+
+        a {
+          &:hover {
+            background-color: rgba(157, 26, 108, 1.00);
+            border-bottom: 5px solid rgba(200, 62, 142, 1.00);
+          }
+
+          &:before {
+            display: inline-block;
+            margin-right: 10px;
+          }
+        }
+
+        .btn {
+          border-bottom: 5px solid rgba(58, 59, 61, 1.00);
+          background-color: rgba(151, 151, 152, 1.00);
         }
       }
     }
+
+
+   .mcsp {
+    border-bottom: 1px solid rgba(202, 61, 144, 1.00);
+
+    @include split-left(35%, '.mcspa', '.mcspb');
+
+    .mcspa {
+      float: left;
+      padding: 15px 15px;
+      border-bottom: 3px solid rgba(202, 61, 144, 1.00);
+
+      span {
+        font-size: 1.4em;
+        font-weight: bolder;
+        color: rgba(18, 18, 18, 1.00);
+        text-align: left;
+      }
+    }
+
+    .mcspb {
+      float: left;
+      padding: 0 20px;
+
+      @include clearfix();
+
+      #keyword {
+        float: left;
+        display: inline-block;
+        width: 50%;
+        margin: 3px 20px;
+        padding: 10px 10px;
+
+        font-size: 1.4em;
+        border: 1px solid rgba(215, 217, 217, 1.00);
+      }
+
+      a {
+        float: left;
+        display: inline-block;
+        width: 40%;
+
+        @include border-radius(10px);
+        border-bottom: 5px solid rgba(157, 26, 108, 1.00);
+        background-color: rgba(200, 62, 142, 1.00);
+
+        font-size: 1.4em;
+        font-weight: bolder;
+        color: rgba(255, 255, 255, 1.00);
+        padding: 10px 10px;
+        text-align: center;
+        text-decoration: none;
+
+        &:hover {
+          background-color: rgba(157, 26, 108, 1.00);
+          border-bottom: 5px solid rgba(200, 62, 142, 1.00);
+        }
+      }
+
+      span {
+        display: block;
+        background-color: rgba(227, 228, 229, 1.00);
+
+        text-align: left;
+        font-size: 1.4em;
+        font-weight: bolder;
+        color: rgba(16, 16, 17, 1.00);
+        padding: 10px 44px;
+      }
+
+    }
+
+   }
+
+   .pgd {
+      margin-top: 30px;
+      border-bottom: 1px solid #e3e5e5;
+      @include clearfix();
+
+      span {
+        display: inline-block;
+        margin: 0 auto;
+        width: 100%;
+
+        &.pinktype {
+          font-size: 2em;
+          width: 100%;
+          color: rgba(196, 49, 133, 1.00);
+          padding-bottom: 30px;
+        }
+
+        &.blacktype {
+          font-size: 2em;
+          width: 100%;
+          color: rgba(13, 14, 14, 1.00);
+          padding-bottom: 30px;
+        }
+      }
+
+      .pg {
+        width: 65%;
+        float: right;
+        padding-bottom: 15px;
+        @include split-right(44%, '.pgl', '.pgr');
+
+        .pgl {
+          float: left;
+
+          text-align: left;
+          font-size: 1.4em;
+          font-weight: bolder;
+          color: rgba(126, 127, 128, 1.00);
+          padding: 10px 44px;
+        }
+
+        .pgr {
+          float: left;
+
+          a {
+            float: left;
+            display: inline-block;
+
+            @include border-radius(10px);
+            border-bottom: 5px solid rgba(157, 26, 108, 1.00);
+            background-color: rgba(200, 62, 142, 1.00);
+
+            font-size: 1.4em;
+            font-weight: bolder;
+            color: rgba(255, 255, 255, 1.00);
+            padding: 10px 83px;
+            text-align: center;
+            text-decoration: none;
+
+            &:hover {
+              background-color: rgba(157, 26, 108, 1.00);
+              border-bottom: 5px solid rgba(200, 62, 142, 1.00);
+            }
+          }
+
+        }
+      }
+    }
+
+
+   a.btnd {
+    display: inline-block;
+    margin-top: 30px;
+
+    @include border-radius(10px);
+    border-bottom: 5px solid rgba(157, 26, 108, 1.00);
+    background-color: rgba(200, 62, 142, 1.00);
+
+    font-size: 1.4em;
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 1.00);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover {
+      background-color: rgba(157, 26, 108, 1.00);
+      border-bottom: 5px solid rgba(200, 62, 142, 1.00);
+    }
+   }
+
+
+
+
 
