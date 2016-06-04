@@ -27,373 +27,795 @@
   }
 }
 
-$allwidth: 1140px;
 
-html {
-  height: 100%;
+@media screen and (min-width: 0px) and (max-width: $mediaTabletWidth) {
 
-  body {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    margin: 0;
-    width: 100%;
+  $allwidth: 100%;
+
+  html {
     height: 100%;
-    font-size: medium;
-    font-family: "微軟正黑體", Monaco,  "Microsoft JhengHei";
-    background: rgba(255, 255, 255, 1.00);
-    color: rgba(50, 50, 50, 0.8);
 
-    @include font-smoothing(antialiased);
-  }
-
-
-
-  header {
-    width: 100%;
-
-    > div {
-      margin: 0 auto;
-      width: $allwidth;
+    body {
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      margin: 0;
+      width: 100%;
       height: 100%;
+      font-size: medium;
+      font-family: "微軟正黑體", Monaco,  "Microsoft JhengHei";
+      background: rgba(255, 255, 255, 1.00);
+      color: rgba(50, 50, 50, 0.8);
 
-      .ta {
-        height: 145px;
-        border-bottom: 3px solid #282828;
-        padding-top: 25px;
+      @include font-smoothing(antialiased);
+    }
 
-        img {
-          margin: 0 auto;
-          height: auto;
-          max-width: 100%;
-        }
-      }
 
-      .tb {
+
+    header {
+      width: 100%;
+
+      > div {
         margin: 0 auto;
-        width: 50%;
-        height: 80px;
+        width: $allwidth;
+        height: 100%;
 
-        @include clearfix();
-
-        > div {
-          float: left;
-          width: calc(100% / 3);
+        .ta {
           height: 100%;
-          padding-top: 30px;
+          border-bottom: 3px solid #282828;
+          padding-top: 15px;
+          padding-bottom: 15px;
 
-          text-align: center;
+          img {
+            width: 100%;
+            margin: 0 auto;
+            height: auto;
+            max-width: none;
+          }
+        }
 
-          a {
-            display: block;
-            font-size: 1em;
-            color:rgba(91, 91, 91, 1.00);
-            text-decoration: none;
-            padding-bottom: 5px;
+        .tb {
+          margin: 0 auto;
+          width: 100%;
+          height: 100%;
+          padding: 0 10px 10px 10px;
 
-            &:hover {
+          @include clearfix();
+
+          > div {
+            float: left;
+            width: calc(100% / 3);
+            height: 100%;
+            padding-top: 15px;
+
+            text-align: center;
+
+            a {
+              display: block;
+              font-size: 1em;
+              color:rgba(91, 91, 91, 1.00);
+              text-decoration: none;
+              padding-bottom: 5px;
+
+              &:hover {
+                color:rgba(201, 62, 141, 1.00);
+                border-bottom: 3px solid rgba(201, 62, 141, 1.00);
+              }
+            }
+
+            .tba {
               color:rgba(201, 62, 141, 1.00);
               border-bottom: 3px solid rgba(201, 62, 141, 1.00);
             }
-          }
 
-          .tba {
-            color:rgba(201, 62, 141, 1.00);
-            border-bottom: 3px solid rgba(201, 62, 141, 1.00);
-          }
+            + div {
 
-          + div {
+              a {
+                position: relative;
 
-            a {
-              position: relative;
-
-              &:before {
-                content: '';
-                position: absolute;
-                left: 0;
-                top: 0;
-                display: inline-block;
-                width: 1px;
-                height: 100%;
-                background-color: rgba(143, 143, 143, 1.00);
+                &:before {
+                  content: '';
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  display: inline-block;
+                  width: 1px;
+                  height: 100%;
+                  background-color: rgba(143, 143, 143, 1.00);
+                }
               }
             }
           }
         }
-      }
 
-      .tc {
-        height: 900px;
-        background-image: url(../img/pic.png);
-        background-repeat:no-repeat;
-        background-color:rgba(250, 248, 249, 1.00);
-        position: relative;
-
-        .tca {
+        .tc {
+          display: block;
           width: 100%;
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          @include clearfix();
+          height: 480px;
 
-          padding-right: 20px;
-          padding-bottom: 20px;
+          background-image: url(../img/pic.png);
+          // background-position: 50% 50%;
+          background-size: 100% auto;
+          background-repeat: no-repeat;
+          background-color: rgba(250, 248, 249, 1.00);
+          position: relative;
 
 
-          .tcaa {
-            float: right;
-            width: 50%;
 
-            .tcaaa {
-              border-bottom: 1px solid rgba(202, 61, 144, 1.00);
-              padding: 15px 0;
+          .tca {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            @include clearfix();
 
-              img {
-                height: auto;
-                max-width: 100%;
+            padding-right: 10px;
+            padding-bottom: 20px;
+
+            padding-left: 10px;
+
+
+            .tcaa {
+              float: right;
+              width: 100%;
+
+              .tcaaa {
+                border-bottom: 1px solid rgba(202, 61, 144, 1.00);
+                padding: 10px 0;
+
+                img {
+                  width: 100%;
+                  height: auto;
+                  max-width: none;
+                }
               }
-            }
 
-
-            span {
-              display: inline-block;
-              font-size: 4em;
-              color: rgba(19, 0, 0, 1.00);
-              padding: 15px 0;
-            }
-
-
-            .tcaab {
-              @include border-radius(40px);
-              border:3px solid rgba(202, 61, 144, 1.00);
-              height: 80px;
-              overflow: hidden;
 
               span {
-                float: left;
-                width: 50%;
+                display: inline-block;
                 font-size: 2.2em;
-                color: rgba(202, 61, 144, 1.00);
-                text-align: left;
-                padding: 13px 3px 10px 25px;
+                color: rgba(19, 0, 0, 1.00);
+                padding: 15px 0;
               }
 
-              a {
-                float: left;
-                width: 50%;
+
+              .tcaab {
+                @include border-radius(40px);
+                border:3px solid rgba(202, 61, 144, 1.00);
                 height: 100%;
+                overflow: hidden;
 
-
-                @include border-left-radius(40px);
-                background-color: rgba(202, 61, 144, 1.00);
-                padding: 10px 0 0 30px;
-
-                background-image: image-url('arrow.png', false, false);
-                background-repeat: no-repeat;
-                background-position: 20px 13px;
-
-                font-size: 2.4em;
-                color: rgba(255, 255, 255, 1.00);
-                text-decoration: none;
-
-                &:hover {
-                  background-color: rgba(237, 46, 154, 1.00);
+                span {
+                  float: left;
+                  width: 50%;
+                  font-size: 1em;
+                  color: rgba(202, 61, 144, 1.00);
+                  text-align: left;
+                  padding: 10px 3px 10px 16px;
                 }
 
-              }
-            }
+                a {
+                  float: left;
+                  width: 50%;
+                  height: 100%;
 
+
+                  @include border-left-radius(40px);
+                  background-color: rgba(202, 61, 144, 1.00);
+                  padding: 10px 0 10px 30px;
+
+                  background-image: image-url('arrow.png', false, false);
+                  background-repeat: no-repeat;
+                  background-position: 11px 7px;
+                  background-size: 20% auto;
+
+                  font-size: 1em;
+                  color: rgba(255, 255, 255, 1.00);
+                  text-decoration: none;
+
+                  &:hover {
+                    background-color: rgba(237, 46, 154, 1.00);
+                  }
+
+                }
+              }
+
+            }
           }
         }
       }
     }
-  }
 
 
-  #middle {
-    width: 100%;
-    margin-top: 80px;
-    display: inline-block;
-    width: 100%;
+    #middle {
+      width: 100%;
+      margin-top: 15px;
+      display: inline-block;
 
-    > div {
-      margin: 0 auto;
-      width: $allwidth;
-      height: 100%;
-
-      .ma {
-        margin-bottom: 80px;
-
-        border-bottom: 1px solid rgba(202, 61, 144, 1.00);
-
-        position: relative;
-
-        span {
-          display: inline-block;
-          position: absolute;
-          margin: 0 auto;
-          @include border-radius(50px);
-
-          padding: 15px 15px;
-          top: -33px;
-          left: 280px;
-          background-color: #ffffff;
-          border: 2px solid rgba(202, 61, 144, 1.00);
-
-          font-size: 1.8em;
-          color: rgba(202, 61, 144, 1.00);
-
-          &.d {
-            top: -33px;
-            left: 400px;
-          }
-
-          &.l {
-            top: -33px;
-            left: 465px;
-          }
-        }
-      }
-
-      .mb {
-        padding-bottom: 30px;
-        border-bottom: 1px solid rgba(227, 229, 229, 1.00);
-
-        font-size: 1.6em;
-        color: rgba(1, 2, 2, 1.00);
-        line-height: 1.6em;
-
-        b {
-          font-weight: bolder;
-          text-decoration: underline;
-        }
-      }
-
-      .mc {
-        padding-top: 35px;
-        border-bottom: 1px solid rgba(202, 61, 144, 1.00);
-        @include split-left(25%, '.mca', '.mcb');
-
-        .mca {
-          padding:0 0 10px 30px;
-          border-bottom: 3px solid rgba(202, 61, 144, 1.00);
-          @include clearfix();
-
-          img {
-            float: left;
-            height: auto;
-            max-width: 100%;
-          }
-
-          span {
-            float: left;
-            font-size: 1.4em;
-            font-weight: bolder;
-            color: rgba(18, 18, 18, 1.00);
-            padding: 3px 0 0 10px;
-          }
-        }
-
-        .mcb {
-          text-align: left;
-          padding-left: 30px;
-
-          span {
-            font-size: 1.2em;
-            color: #121212;
-            padding: 5px 0 0 10px;
-          }
-        }
-      }
-
-      .mcaa {
-        display: block;
-        float: right;
-        width: 71%;
-
-        padding-top: 8px;
-
-        font-size: .8em;
-        color: rgba(124, 124, 124, 1.00);
-        text-align: left;
-
-        &.red {
-          color: rgba(253, 50, 64, 1.00);
-        }
-      }
-
-      .mcc {
-        margin-top: 50px;
+      > div {
+        margin: 0 auto;
+        width: $allwidth;
         height: 100%;
-        border-top:1px solid rgb(227, 229, 229);
-        padding-bottom: 15px;
+
+        padding: 10px 10px;
 
         @include clearfix();
 
-        div {
+        .ma {
+          margin-bottom: 0;
+
+          border-bottom: 0;
+
+          position: relative;
+
+          span {
+            display: inline-block;
+            width: 100%;
+            position: absolute;
+            margin: 0 auto;
+            @include border-radius(50px);
+
+            padding: 5px 10px;
+            top: 0;
+            left: 0;
+            background-color: #ffffff;
+            border: 2px solid rgba(202, 61, 144, 1.00);
+
+            font-size: 1.4em;
+            color: rgba(202, 61, 144, 1.00);
+
+            font-weight: bolder;
+
+            &.d {
+              top: 0;
+              left: 0;
+            }
+
+            &.l {
+              top: 0;
+              left: 0;
+            }
+          }
+        }
+
+        .mb {
+          display: block;
+          width: 100%;
           float: left;
+          padding-bottom: 25px;
+          padding-top: 90px;
+          border-bottom: 1px solid rgba(227, 229, 229, 1.00);
+
+          font-size: 1.2em;
+          color: rgba(1, 2, 2, 1.00);
+          line-height: 1.2em;
+
+          line-height: 1.6em;
+
+          // padding-top: 90px;
+          text-align: left;
+
+          b {
+            font-weight: bolder;
+            text-decoration: underline;
+          }
+        }
+
+        .mc {
+          float: left;
+          margin: 15px 0;
+          border-bottom: 1px solid rgba(202, 61, 144, 1.00);
+          // @include split-left(30%, '.mca', '.mcb');
 
           display: block;
           width: 100%;
-          padding: 15px 0 0 0;
 
-          font-size: 1em;
-          font-weight: bolder;
-          color: rgba(202, 61, 144, 1.00);
+          .mca {
+            width: 100%;
+            padding-bottom: 10px;
+            border-bottom: 3px solid rgba(202, 61, 144, 1.00);
+            @include clearfix();
+
+            img {
+              float: left;
+              height: auto;
+              max-width: none;
+              width: 10%;
+            }
+
+            span {
+              float: left;
+              font-size: 1.2em;
+              font-weight: bolder;
+              color: rgba(18, 18, 18, 1.00);
+              padding: 0 0 0 10px;
+            }
+          }
+
+          .mcb {
+            text-align: left;
+            padding-left: 0;
+
+            padding: 10px 0;
+
+            span {
+              font-size: 1em;
+              color: #121212;
+              padding: 0;
+
+              line-height: 1.6em;
+            }
+          }
+        }
+
+        .mcaa {
+          display: block;
+          float: right;
+          width: 100%;
+
+          padding-top: 8px;
+
+          font-size: .8em;
+          color: rgba(124, 124, 124, 1.00);
           text-align: left;
 
-          &.mcca {
+          line-height: 1.6em;
+
+          &.red {
+            color: rgba(253, 50, 64, 1.00);
+          }
+        }
+
+        .mcc {
+          margin-top: 50px;
+          height: 100%;
+          border-top:1px solid rgb(227, 229, 229);
+          padding-bottom: 15px;
+
+          @include clearfix();
+
+          div {
             float: left;
-            font-size: .8em;
-            color: rgba(114, 114, 114, 1.00);
+
+            display: block;
+            width: 100%;
+            padding: 15px 0 0 0;
+
+            font-size: 1em;
+            font-weight: bolder;
+            color: rgba(202, 61, 144, 1.00);
             text-align: left;
-            line-height: 2em;
+
+            &.mcca {
+              float: left;
+              font-size: .8em;
+              color: rgba(114, 114, 114, 1.00);
+              text-align: left;
+              line-height: 2em;
+            }
+          }
+        }
+
+      }
+    }
+
+
+    footer {
+      width: 100%;
+      margin-top: 40px;
+
+      > div {
+        margin: 0 auto;
+        width: $allwidth;
+        height: 90px;
+
+        border-top: 3px solid #282828;
+        padding-top: 25px;
+
+        @include clearfix();
+
+        .a {
+          display: none;
+          float: left;
+          width: 355px;
+          height: 56px;
+
+          img {
+            height: auto;
+            max-width: 100%;
+          }
+        }
+
+
+        span {
+          line-height: 1.6em;
+          float: left;
+          font-size: 0.7em;
+          padding: 0 10px;
+          color: #333333;
+        }
+
+
+      }
+    }
+
+  }
+
+}
+
+
+
+
+
+@media screen and (min-width: $mediaTabletWidth + 1) {
+
+  $allwidth: 1140px;
+
+  html {
+    height: 100%;
+
+    body {
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      font-size: medium;
+      font-family: "微軟正黑體", Monaco,  "Microsoft JhengHei";
+      background: rgba(255, 255, 255, 1.00);
+      color: rgba(50, 50, 50, 0.8);
+
+      @include font-smoothing(antialiased);
+    }
+
+
+
+    header {
+      width: 100%;
+
+      > div {
+        margin: 0 auto;
+        width: $allwidth;
+        height: 100%;
+
+        .ta {
+          height: 145px;
+          border-bottom: 3px solid #282828;
+          padding-top: 25px;
+
+          img {
+            margin: 0 auto;
+            height: auto;
+            max-width: 100%;
+          }
+        }
+
+        .tb {
+          margin: 0 auto;
+          width: 50%;
+          height: 80px;
+
+          @include clearfix();
+
+          > div {
+            float: left;
+            width: calc(100% / 3);
+            height: 100%;
+            padding-top: 30px;
+
+            text-align: center;
+
+            a {
+              display: block;
+              font-size: 1em;
+              color:rgba(91, 91, 91, 1.00);
+              text-decoration: none;
+              padding-bottom: 5px;
+
+              &:hover {
+                color:rgba(201, 62, 141, 1.00);
+                border-bottom: 3px solid rgba(201, 62, 141, 1.00);
+              }
+            }
+
+            .tba {
+              color:rgba(201, 62, 141, 1.00);
+              border-bottom: 3px solid rgba(201, 62, 141, 1.00);
+            }
+
+            + div {
+
+              a {
+                position: relative;
+
+                &:before {
+                  content: '';
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  display: inline-block;
+                  width: 1px;
+                  height: 100%;
+                  background-color: rgba(143, 143, 143, 1.00);
+                }
+              }
+            }
+          }
+        }
+
+        .tc {
+          height: 900px;
+          background-image: url(../img/pic.png);
+          background-repeat:no-repeat;
+          background-color:rgba(250, 248, 249, 1.00);
+          position: relative;
+
+          .tca {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            @include clearfix();
+
+            padding-right: 20px;
+            padding-bottom: 20px;
+
+
+            .tcaa {
+              float: right;
+              width: 50%;
+
+              .tcaaa {
+                border-bottom: 1px solid rgba(202, 61, 144, 1.00);
+                padding: 15px 0;
+
+                img {
+                  height: auto;
+                  max-width: 100%;
+                }
+              }
+
+
+              span {
+                display: inline-block;
+                font-size: 4em;
+                color: rgba(19, 0, 0, 1.00);
+                padding: 15px 0;
+              }
+
+
+              .tcaab {
+                @include border-radius(40px);
+                border:3px solid rgba(202, 61, 144, 1.00);
+                height: 80px;
+                overflow: hidden;
+
+                span {
+                  float: left;
+                  width: 50%;
+                  font-size: 2.2em;
+                  color: rgba(202, 61, 144, 1.00);
+                  text-align: left;
+                  padding: 13px 3px 10px 25px;
+                }
+
+                a {
+                  float: left;
+                  width: 50%;
+                  height: 100%;
+
+
+                  @include border-left-radius(40px);
+                  background-color: rgba(202, 61, 144, 1.00);
+                  padding: 10px 0 0 30px;
+
+                  background-image: image-url('arrow.png', false, false);
+                  background-repeat: no-repeat;
+                  background-position: 20px 13px;
+
+                  font-size: 2.4em;
+                  color: rgba(255, 255, 255, 1.00);
+                  text-decoration: none;
+
+                  &:hover {
+                    background-color: rgba(237, 46, 154, 1.00);
+                  }
+
+                }
+              }
+
+            }
           }
         }
       }
-
     }
-  }
 
 
-  footer {
-    width: 100%;
-    margin-top: 80px;
+    #middle {
+      width: 100%;
+      margin-top: 80px;
+      display: inline-block;
+      width: 100%;
 
-    > div {
-      margin: 0 auto;
-      width: $allwidth;
-      height: 90px;
+      > div {
+        margin: 0 auto;
+        width: $allwidth;
+        height: 100%;
 
-      border-top: 3px solid #282828;
-      padding-top: 25px;
+        .ma {
+          margin-bottom: 80px;
 
-      @include clearfix();
+          border-bottom: 1px solid rgba(202, 61, 144, 1.00);
 
-      .a {
-        float: left;
-        width: 355px;
-        height: 56px;
+          position: relative;
 
-        img {
-          height: auto;
-          max-width: 100%;
+          span {
+            display: inline-block;
+            position: absolute;
+            margin: 0 auto;
+            @include border-radius(50px);
+
+            padding: 15px 15px;
+            top: -33px;
+            left: 280px;
+            background-color: #ffffff;
+            border: 2px solid rgba(202, 61, 144, 1.00);
+
+            font-size: 1.8em;
+            color: rgba(202, 61, 144, 1.00);
+
+            &.d {
+              top: -33px;
+              left: 400px;
+            }
+
+            &.l {
+              top: -33px;
+              left: 465px;
+            }
+          }
         }
+
+        .mb {
+          padding-bottom: 30px;
+          border-bottom: 1px solid rgba(227, 229, 229, 1.00);
+
+          font-size: 1.6em;
+          color: rgba(1, 2, 2, 1.00);
+          line-height: 1.6em;
+
+          b {
+            font-weight: bolder;
+            text-decoration: underline;
+          }
+        }
+
+        .mc {
+          padding-top: 35px;
+          border-bottom: 1px solid rgba(202, 61, 144, 1.00);
+          @include split-left(25%, '.mca', '.mcb');
+
+          .mca {
+            padding:0 0 10px 30px;
+            border-bottom: 3px solid rgba(202, 61, 144, 1.00);
+            @include clearfix();
+
+            img {
+              float: left;
+              height: auto;
+              max-width: 100%;
+            }
+
+            span {
+              float: left;
+              font-size: 1.4em;
+              font-weight: bolder;
+              color: rgba(18, 18, 18, 1.00);
+              padding: 3px 0 0 10px;
+            }
+          }
+
+          .mcb {
+            text-align: left;
+            padding-left: 30px;
+
+            span {
+              font-size: 1.2em;
+              color: #121212;
+              padding: 5px 0 0 10px;
+            }
+          }
+        }
+
+        .mcaa {
+          display: block;
+          float: right;
+          width: 71%;
+
+          padding-top: 8px;
+
+          font-size: .8em;
+          color: rgba(124, 124, 124, 1.00);
+          text-align: left;
+
+          &.red {
+            color: rgba(253, 50, 64, 1.00);
+          }
+        }
+
+        .mcc {
+          margin-top: 50px;
+          height: 100%;
+          border-top:1px solid rgb(227, 229, 229);
+          padding-bottom: 15px;
+
+          @include clearfix();
+
+          div {
+            float: left;
+
+            display: block;
+            width: 100%;
+            padding: 15px 0 0 0;
+
+            font-size: 1em;
+            font-weight: bolder;
+            color: rgba(202, 61, 144, 1.00);
+            text-align: left;
+
+            &.mcca {
+              float: left;
+              font-size: .8em;
+              color: rgba(114, 114, 114, 1.00);
+              text-align: left;
+              line-height: 2em;
+            }
+          }
+        }
+
       }
-
-
-      span {
-        line-height: 64px;
-        float: left;
-        font-size: 0.7em;
-        padding: 0 13px;
-        color: #333333;
-      }
-
-
     }
+
+
+    footer {
+      width: 100%;
+      margin-top: 80px;
+
+      > div {
+        margin: 0 auto;
+        width: $allwidth;
+        height: 90px;
+
+        border-top: 3px solid #282828;
+        padding-top: 25px;
+
+        @include clearfix();
+
+        .a {
+          float: left;
+          width: 355px;
+          height: 56px;
+
+          img {
+            height: auto;
+            max-width: 100%;
+          }
+        }
+
+
+        span {
+          line-height: 64px;
+          float: left;
+          font-size: 0.7em;
+          padding: 0 13px;
+          color: #333333;
+        }
+
+
+      }
+    }
+
   }
-
-
 
 }

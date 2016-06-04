@@ -86,349 +86,711 @@
   background-color: #96c8ff;
 }
 
-html {
-  height: 100%;
+@media screen and (min-width: 0px) and (max-width: 960px) {
+  html {
+    height: 100%;
+  }
+  html body {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-size: medium;
+    font-family: "微軟正黑體", Monaco,  "Microsoft JhengHei";
+    background: white;
+    color: rgba(50, 50, 50, 0.8);
+    -moz-osx-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+  }
+  html header {
+    width: 100%;
+  }
+  html header > div {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+  }
+  html header > div .ta {
+    height: 100%;
+    border-bottom: 3px solid #282828;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  html header > div .ta img {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    max-width: none;
+  }
+  html header > div .tb {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px 10px 10px;
+    *zoom: 1;
+  }
+  html header > div .tb:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+  html header > div .tb > div {
+    float: left;
+    width: calc(100% / 3);
+    height: 100%;
+    padding-top: 15px;
+    text-align: center;
+  }
+  html header > div .tb > div a {
+    display: block;
+    font-size: 1em;
+    color: #5b5b5b;
+    text-decoration: none;
+    padding-bottom: 5px;
+  }
+  html header > div .tb > div a:hover {
+    color: #c93e8d;
+    border-bottom: 3px solid #c93e8d;
+  }
+  html header > div .tb > div .tba {
+    color: #c93e8d;
+    border-bottom: 3px solid #c93e8d;
+  }
+  html header > div .tb > div + div a {
+    position: relative;
+  }
+  html header > div .tb > div + div a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 1px;
+    height: 100%;
+    background-color: #8f8f8f;
+  }
+  html header > div .tc {
+    display: block;
+    width: 100%;
+    height: 480px;
+    background-image: url(../img/pic.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #faf8f9;
+    position: relative;
+  }
+  html header > div .tc .tca {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    *zoom: 1;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+  }
+  html header > div .tc .tca:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+  html header > div .tc .tca .tcaa {
+    float: right;
+    width: 100%;
+  }
+  html header > div .tc .tca .tcaa .tcaaa {
+    border-bottom: 1px solid #ca3d90;
+    padding: 10px 0;
+  }
+  html header > div .tc .tca .tcaa .tcaaa img {
+    width: 100%;
+    height: auto;
+    max-width: none;
+  }
+  html header > div .tc .tca .tcaa span {
+    display: inline-block;
+    font-size: 2.2em;
+    color: #130000;
+    padding: 15px 0;
+  }
+  html header > div .tc .tca .tcaa .tcaab {
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    border-radius: 40px;
+    border: 3px solid #ca3d90;
+    height: 100%;
+    overflow: hidden;
+  }
+  html header > div .tc .tca .tcaa .tcaab span {
+    float: left;
+    width: 50%;
+    font-size: 1em;
+    color: #ca3d90;
+    text-align: left;
+    padding: 10px 3px 10px 16px;
+  }
+  html header > div .tc .tca .tcaa .tcaab a {
+    float: left;
+    width: 50%;
+    height: 100%;
+    -moz-border-radius-topleft: 40px;
+    -webkit-border-top-left-radius: 40px;
+    border-top-left-radius: 40px;
+    -moz-border-radius-bottomleft: 40px;
+    -webkit-border-bottom-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    background-color: #ca3d90;
+    padding: 10px 0 10px 30px;
+    background-image: url('/dysonbuy/img/arrow.png');
+    background-repeat: no-repeat;
+    background-position: 11px 7px;
+    background-size: 20% auto;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+  }
+  html header > div .tc .tca .tcaa .tcaab a:hover {
+    background-color: #ed2e9a;
+  }
+  html #middle {
+    width: 100%;
+    margin-top: 15px;
+    display: inline-block;
+  }
+  html #middle > div {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+    *zoom: 1;
+  }
+  html #middle > div:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+  html #middle > div .ma {
+    margin-bottom: 0;
+    border-bottom: 0;
+    position: relative;
+  }
+  html #middle > div .ma span {
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    padding: 5px 10px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    border: 2px solid #ca3d90;
+    font-size: 1.4em;
+    color: #ca3d90;
+    font-weight: bolder;
+  }
+  html #middle > div .ma span.d {
+    top: 0;
+    left: 0;
+  }
+  html #middle > div .ma span.l {
+    top: 0;
+    left: 0;
+  }
+  html #middle > div .mb {
+    display: block;
+    width: 100%;
+    float: left;
+    padding-bottom: 25px;
+    padding-top: 90px;
+    border-bottom: 1px solid #e3e5e5;
+    font-size: 1.2em;
+    color: #010202;
+    line-height: 1.2em;
+    line-height: 1.6em;
+    text-align: left;
+  }
+  html #middle > div .mb b {
+    font-weight: bolder;
+    text-decoration: underline;
+  }
+  html #middle > div .mc {
+    float: left;
+    margin: 15px 0;
+    border-bottom: 1px solid #ca3d90;
+    display: block;
+    width: 100%;
+  }
+  html #middle > div .mc .mca {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #ca3d90;
+    *zoom: 1;
+  }
+  html #middle > div .mc .mca:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+  html #middle > div .mc .mca img {
+    float: left;
+    height: auto;
+    max-width: none;
+    width: 10%;
+  }
+  html #middle > div .mc .mca span {
+    float: left;
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: #121212;
+    padding: 0 0 0 10px;
+  }
+  html #middle > div .mc .mcb {
+    text-align: left;
+    padding-left: 0;
+    padding: 10px 0;
+  }
+  html #middle > div .mc .mcb span {
+    font-size: 1em;
+    color: #121212;
+    padding: 0;
+    line-height: 1.6em;
+  }
+  html #middle > div .mcaa {
+    display: block;
+    float: right;
+    width: 100%;
+    padding-top: 8px;
+    font-size: .8em;
+    color: #7c7c7c;
+    text-align: left;
+    line-height: 1.6em;
+  }
+  html #middle > div .mcaa.red {
+    color: #fd3240;
+  }
+  html #middle > div .mcc {
+    margin-top: 50px;
+    height: 100%;
+    border-top: 1px solid #e3e5e5;
+    padding-bottom: 15px;
+    *zoom: 1;
+  }
+  html #middle > div .mcc:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+  html #middle > div .mcc div {
+    float: left;
+    display: block;
+    width: 100%;
+    padding: 15px 0 0 0;
+    font-size: 1em;
+    font-weight: bolder;
+    color: #ca3d90;
+    text-align: left;
+  }
+  html #middle > div .mcc div.mcca {
+    float: left;
+    font-size: .8em;
+    color: #727272;
+    text-align: left;
+    line-height: 2em;
+  }
+  html footer {
+    width: 100%;
+    margin-top: 40px;
+  }
+  html footer > div {
+    margin: 0 auto;
+    width: 100%;
+    height: 90px;
+    border-top: 3px solid #282828;
+    padding-top: 25px;
+    *zoom: 1;
+  }
+  html footer > div:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+  html footer > div .a {
+    display: none;
+    float: left;
+    width: 355px;
+    height: 56px;
+  }
+  html footer > div .a img {
+    height: auto;
+    max-width: 100%;
+  }
+  html footer > div span {
+    line-height: 1.6em;
+    float: left;
+    font-size: 0.7em;
+    padding: 0 10px;
+    color: #333333;
+  }
 }
-html body {
-  position: relative;
-  display: inline-block;
-  text-align: center;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  font-size: medium;
-  font-family: "微軟正黑體", Monaco,  "Microsoft JhengHei";
-  background: white;
-  color: rgba(50, 50, 50, 0.8);
-  -moz-osx-font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -ms-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-}
-html header {
-  width: 100%;
-}
-html header > div {
-  margin: 0 auto;
-  width: 1140px;
-  height: 100%;
-}
-html header > div .ta {
-  height: 145px;
-  border-bottom: 3px solid #282828;
-  padding-top: 25px;
-}
-html header > div .ta img {
-  margin: 0 auto;
-  height: auto;
-  max-width: 100%;
-}
-html header > div .tb {
-  margin: 0 auto;
-  width: 50%;
-  height: 80px;
-  *zoom: 1;
-}
-html header > div .tb:after {
-  display: table;
-  content: "";
-  line-height: 0;
-  clear: both;
-}
-html header > div .tb > div {
-  float: left;
-  width: calc(100% / 3);
-  height: 100%;
-  padding-top: 30px;
-  text-align: center;
-}
-html header > div .tb > div a {
-  display: block;
-  font-size: 1em;
-  color: #5b5b5b;
-  text-decoration: none;
-  padding-bottom: 5px;
-}
-html header > div .tb > div a:hover {
-  color: #c93e8d;
-  border-bottom: 3px solid #c93e8d;
-}
-html header > div .tb > div .tba {
-  color: #c93e8d;
-  border-bottom: 3px solid #c93e8d;
-}
-html header > div .tb > div + div a {
-  position: relative;
-}
-html header > div .tb > div + div a:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: inline-block;
-  width: 1px;
-  height: 100%;
-  background-color: #8f8f8f;
-}
-html header > div .tc {
-  height: 900px;
-  background-image: url(../img/pic.png);
-  background-repeat: no-repeat;
-  background-color: #faf8f9;
-  position: relative;
-}
-html header > div .tc .tca {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  *zoom: 1;
-  padding-right: 20px;
-  padding-bottom: 20px;
-}
-html header > div .tc .tca:after {
-  display: table;
-  content: "";
-  line-height: 0;
-  clear: both;
-}
-html header > div .tc .tca .tcaa {
-  float: right;
-  width: 50%;
-}
-html header > div .tc .tca .tcaa .tcaaa {
-  border-bottom: 1px solid #ca3d90;
-  padding: 15px 0;
-}
-html header > div .tc .tca .tcaa .tcaaa img {
-  height: auto;
-  max-width: 100%;
-}
-html header > div .tc .tca .tcaa span {
-  display: inline-block;
-  font-size: 4em;
-  color: #130000;
-  padding: 15px 0;
-}
-html header > div .tc .tca .tcaa .tcaab {
-  -moz-border-radius: 40px;
-  -webkit-border-radius: 40px;
-  border-radius: 40px;
-  border: 3px solid #ca3d90;
-  height: 80px;
-  overflow: hidden;
-}
-html header > div .tc .tca .tcaa .tcaab span {
-  float: left;
-  width: 50%;
-  font-size: 2.2em;
-  color: #ca3d90;
-  text-align: left;
-  padding: 13px 3px 10px 25px;
-}
-html header > div .tc .tca .tcaa .tcaab a {
-  float: left;
-  width: 50%;
-  height: 100%;
-  -moz-border-radius-topleft: 40px;
-  -webkit-border-top-left-radius: 40px;
-  border-top-left-radius: 40px;
-  -moz-border-radius-bottomleft: 40px;
-  -webkit-border-bottom-left-radius: 40px;
-  border-bottom-left-radius: 40px;
-  background-color: #ca3d90;
-  padding: 10px 0 0 30px;
-  background-image: url('/dysonbuy/img/arrow.png');
-  background-repeat: no-repeat;
-  background-position: 20px 13px;
-  font-size: 2.4em;
-  color: white;
-  text-decoration: none;
-}
-html header > div .tc .tca .tcaa .tcaab a:hover {
-  background-color: #ed2e9a;
-}
-html #middle {
-  width: 100%;
-  margin-top: 80px;
-  display: inline-block;
-  width: 100%;
-}
-html #middle > div {
-  margin: 0 auto;
-  width: 1140px;
-  height: 100%;
-}
-html #middle > div .ma {
-  margin-bottom: 80px;
-  border-bottom: 1px solid #ca3d90;
-  position: relative;
-}
-html #middle > div .ma span {
-  display: inline-block;
-  position: absolute;
-  margin: 0 auto;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
-  padding: 15px 15px;
-  top: -33px;
-  left: 280px;
-  background-color: #ffffff;
-  border: 2px solid #ca3d90;
-  font-size: 1.8em;
-  color: #ca3d90;
-}
-html #middle > div .ma span.d {
-  top: -33px;
-  left: 400px;
-}
-html #middle > div .ma span.l {
-  top: -33px;
-  left: 465px;
-}
-html #middle > div .mb {
-  padding-bottom: 30px;
-  border-bottom: 1px solid #e3e5e5;
-  font-size: 1.6em;
-  color: #010202;
-  line-height: 1.6em;
-}
-html #middle > div .mb b {
-  font-weight: bolder;
-  text-decoration: underline;
-}
-html #middle > div .mc {
-  padding-top: 35px;
-  border-bottom: 1px solid #ca3d90;
-  *zoom: 1;
-}
-html #middle > div .mc:after {
-  display: table;
-  content: "";
-  line-height: 0;
-  clear: both;
-}
-html #middle > div .mc .mca, html #middle > div .mc .mcb {
-  float: left;
-  position: relative;
-  display: inline-block;
-}
-html #middle > div .mc .mcb {
-  float: right;
-}
-html #middle > div .mc .mca {
-  width: 25%;
-}
-html #middle > div .mc .mcb {
-  width: calc(100% - 25%);
-}
-html #middle > div .mc .mca {
-  padding: 0 0 10px 30px;
-  border-bottom: 3px solid #ca3d90;
-  *zoom: 1;
-}
-html #middle > div .mc .mca:after {
-  display: table;
-  content: "";
-  line-height: 0;
-  clear: both;
-}
-html #middle > div .mc .mca img {
-  float: left;
-  height: auto;
-  max-width: 100%;
-}
-html #middle > div .mc .mca span {
-  float: left;
-  font-size: 1.4em;
-  font-weight: bolder;
-  color: #121212;
-  padding: 3px 0 0 10px;
-}
-html #middle > div .mc .mcb {
-  text-align: left;
-  padding-left: 30px;
-}
-html #middle > div .mc .mcb span {
-  font-size: 1.2em;
-  color: #121212;
-  padding: 5px 0 0 10px;
-}
-html #middle > div .mcaa {
-  display: block;
-  float: right;
-  width: 71%;
-  padding-top: 8px;
-  font-size: .8em;
-  color: #7c7c7c;
-  text-align: left;
-}
-html #middle > div .mcaa.red {
-  color: #fd3240;
-}
-html #middle > div .mcc {
-  margin-top: 50px;
-  height: 100%;
-  border-top: 1px solid #e3e5e5;
-  padding-bottom: 15px;
-  *zoom: 1;
-}
-html #middle > div .mcc:after {
-  display: table;
-  content: "";
-  line-height: 0;
-  clear: both;
-}
-html #middle > div .mcc div {
-  float: left;
-  display: block;
-  width: 100%;
-  padding: 15px 0 0 0;
-  font-size: 1em;
-  font-weight: bolder;
-  color: #ca3d90;
-  text-align: left;
-}
-html #middle > div .mcc div.mcca {
-  float: left;
-  font-size: .8em;
-  color: #727272;
-  text-align: left;
-  line-height: 2em;
-}
-html footer {
-  width: 100%;
-  margin-top: 80px;
-}
-html footer > div {
-  margin: 0 auto;
-  width: 1140px;
-  height: 90px;
-  border-top: 3px solid #282828;
-  padding-top: 25px;
-  *zoom: 1;
-}
-html footer > div:after {
-  display: table;
-  content: "";
-  line-height: 0;
-  clear: both;
-}
-html footer > div .a {
-  float: left;
-  width: 355px;
-  height: 56px;
-}
-html footer > div .a img {
-  height: auto;
-  max-width: 100%;
-}
-html footer > div span {
-  line-height: 64px;
-  float: left;
-  font-size: 0.7em;
-  padding: 0 13px;
-  color: #333333;
+@media screen and (min-width: 961px) {
+  html {
+    height: 100%;
+  }
+  html body {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-size: medium;
+    font-family: "微軟正黑體", Monaco,  "Microsoft JhengHei";
+    background: white;
+    color: rgba(50, 50, 50, 0.8);
+    -moz-osx-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+  }
+  html header {
+    width: 100%;
+  }
+  html header > div {
+    margin: 0 auto;
+    width: 1140px;
+    height: 100%;
+  }
+  html header > div .ta {
+    height: 145px;
+    border-bottom: 3px solid #282828;
+    padding-top: 25px;
+  }
+  html header > div .ta img {
+    margin: 0 auto;
+    height: auto;
+    max-width: 100%;
+  }
+  html header > div .tb {
+    margin: 0 auto;
+    width: 50%;
+    height: 80px;
+    *zoom: 1;
+  }
+  html header > div .tb:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+  html header > div .tb > div {
+    float: left;
+    width: calc(100% / 3);
+    height: 100%;
+    padding-top: 30px;
+    text-align: center;
+  }
+  html header > div .tb > div a {
+    display: block;
+    font-size: 1em;
+    color: #5b5b5b;
+    text-decoration: none;
+    padding-bottom: 5px;
+  }
+  html header > div .tb > div a:hover {
+    color: #c93e8d;
+    border-bottom: 3px solid #c93e8d;
+  }
+  html header > div .tb > div .tba {
+    color: #c93e8d;
+    border-bottom: 3px solid #c93e8d;
+  }
+  html header > div .tb > div + div a {
+    position: relative;
+  }
+  html header > div .tb > div + div a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 1px;
+    height: 100%;
+    background-color: #8f8f8f;
+  }
+  html header > div .tc {
+    height: 900px;
+    background-image: url(../img/pic.png);
+    background-repeat: no-repeat;
+    background-color: #faf8f9;
+    position: relative;
+  }
+  html header > div .tc .tca {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    *zoom: 1;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  html header > div .tc .tca:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+  html header > div .tc .tca .tcaa {
+    float: right;
+    width: 50%;
+  }
+  html header > div .tc .tca .tcaa .tcaaa {
+    border-bottom: 1px solid #ca3d90;
+    padding: 15px 0;
+  }
+  html header > div .tc .tca .tcaa .tcaaa img {
+    height: auto;
+    max-width: 100%;
+  }
+  html header > div .tc .tca .tcaa span {
+    display: inline-block;
+    font-size: 4em;
+    color: #130000;
+    padding: 15px 0;
+  }
+  html header > div .tc .tca .tcaa .tcaab {
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    border-radius: 40px;
+    border: 3px solid #ca3d90;
+    height: 80px;
+    overflow: hidden;
+  }
+  html header > div .tc .tca .tcaa .tcaab span {
+    float: left;
+    width: 50%;
+    font-size: 2.2em;
+    color: #ca3d90;
+    text-align: left;
+    padding: 13px 3px 10px 25px;
+  }
+  html header > div .tc .tca .tcaa .tcaab a {
+    float: left;
+    width: 50%;
+    height: 100%;
+    -moz-border-radius-topleft: 40px;
+    -webkit-border-top-left-radius: 40px;
+    border-top-left-radius: 40px;
+    -moz-border-radius-bottomleft: 40px;
+    -webkit-border-bottom-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    background-color: #ca3d90;
+    padding: 10px 0 0 30px;
+    background-image: url('/dysonbuy/img/arrow.png');
+    background-repeat: no-repeat;
+    background-position: 20px 13px;
+    font-size: 2.4em;
+    color: white;
+    text-decoration: none;
+  }
+  html header > div .tc .tca .tcaa .tcaab a:hover {
+    background-color: #ed2e9a;
+  }
+  html #middle {
+    width: 100%;
+    margin-top: 80px;
+    display: inline-block;
+    width: 100%;
+  }
+  html #middle > div {
+    margin: 0 auto;
+    width: 1140px;
+    height: 100%;
+  }
+  html #middle > div .ma {
+    margin-bottom: 80px;
+    border-bottom: 1px solid #ca3d90;
+    position: relative;
+  }
+  html #middle > div .ma span {
+    display: inline-block;
+    position: absolute;
+    margin: 0 auto;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    padding: 15px 15px;
+    top: -33px;
+    left: 280px;
+    background-color: #ffffff;
+    border: 2px solid #ca3d90;
+    font-size: 1.8em;
+    color: #ca3d90;
+  }
+  html #middle > div .ma span.d {
+    top: -33px;
+    left: 400px;
+  }
+  html #middle > div .ma span.l {
+    top: -33px;
+    left: 465px;
+  }
+  html #middle > div .mb {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e3e5e5;
+    font-size: 1.6em;
+    color: #010202;
+    line-height: 1.6em;
+  }
+  html #middle > div .mb b {
+    font-weight: bolder;
+    text-decoration: underline;
+  }
+  html #middle > div .mc {
+    padding-top: 35px;
+    border-bottom: 1px solid #ca3d90;
+    *zoom: 1;
+  }
+  html #middle > div .mc:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+  html #middle > div .mc .mca, html #middle > div .mc .mcb {
+    float: left;
+    position: relative;
+    display: inline-block;
+  }
+  html #middle > div .mc .mcb {
+    float: right;
+  }
+  html #middle > div .mc .mca {
+    width: 25%;
+  }
+  html #middle > div .mc .mcb {
+    width: calc(100% - 25%);
+  }
+  html #middle > div .mc .mca {
+    padding: 0 0 10px 30px;
+    border-bottom: 3px solid #ca3d90;
+    *zoom: 1;
+  }
+  html #middle > div .mc .mca:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+  html #middle > div .mc .mca img {
+    float: left;
+    height: auto;
+    max-width: 100%;
+  }
+  html #middle > div .mc .mca span {
+    float: left;
+    font-size: 1.4em;
+    font-weight: bolder;
+    color: #121212;
+    padding: 3px 0 0 10px;
+  }
+  html #middle > div .mc .mcb {
+    text-align: left;
+    padding-left: 30px;
+  }
+  html #middle > div .mc .mcb span {
+    font-size: 1.2em;
+    color: #121212;
+    padding: 5px 0 0 10px;
+  }
+  html #middle > div .mcaa {
+    display: block;
+    float: right;
+    width: 71%;
+    padding-top: 8px;
+    font-size: .8em;
+    color: #7c7c7c;
+    text-align: left;
+  }
+  html #middle > div .mcaa.red {
+    color: #fd3240;
+  }
+  html #middle > div .mcc {
+    margin-top: 50px;
+    height: 100%;
+    border-top: 1px solid #e3e5e5;
+    padding-bottom: 15px;
+    *zoom: 1;
+  }
+  html #middle > div .mcc:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+  html #middle > div .mcc div {
+    float: left;
+    display: block;
+    width: 100%;
+    padding: 15px 0 0 0;
+    font-size: 1em;
+    font-weight: bolder;
+    color: #ca3d90;
+    text-align: left;
+  }
+  html #middle > div .mcc div.mcca {
+    float: left;
+    font-size: .8em;
+    color: #727272;
+    text-align: left;
+    line-height: 2em;
+  }
+  html footer {
+    width: 100%;
+    margin-top: 80px;
+  }
+  html footer > div {
+    margin: 0 auto;
+    width: 1140px;
+    height: 90px;
+    border-top: 3px solid #282828;
+    padding-top: 25px;
+    *zoom: 1;
+  }
+  html footer > div:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+  html footer > div .a {
+    float: left;
+    width: 355px;
+    height: 56px;
+  }
+  html footer > div .a img {
+    height: auto;
+    max-width: 100%;
+  }
+  html footer > div span {
+    line-height: 64px;
+    float: left;
+    font-size: 0.7em;
+    padding: 0 13px;
+    color: #333333;
+  }
 }
