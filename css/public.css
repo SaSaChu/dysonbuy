@@ -251,7 +251,7 @@
     background-image: url('/dysonbuy/img/arrow.png');
     background-repeat: no-repeat;
     background-position: 11px 7px;
-    background-size: 20% auto;
+    background-size: auto 70%;
     font-size: 1em;
     color: white;
     text-decoration: none;
