@@ -518,6 +518,7 @@
 
   .mcsp {
     border-bottom: 1px solid #ca3d90;
+    margin-bottom: 30px;
     *zoom: 1;
   }
   .mcsp:after {

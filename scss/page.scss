@@ -483,6 +483,7 @@
    .mcsp {
     border-bottom: 1px solid rgba(202, 61, 144, 1.00);
 
+    margin-bottom: 30px;
     @include split-left(35%, '.mcspa', '.mcspb');
 
     .mcspa {
