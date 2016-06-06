@@ -45,7 +45,7 @@
  */
 @font-face {
   font-family: "icomoon";
-  src: url('/dysonbuy/font/icomoon/icomoon.eot?1464949318') format('embedded-opentype'), url('/dysonbuy/font/icomoon/icomoon.woff?1464949318') format('woff'), url('/dysonbuy/font/icomoon/icomoon.ttf?1464949318') format('truetype'), url('/dysonbuy/font/icomoon/icomoon.svg?1464949318') format('svg');
+  src: url('/dysonbuy/font/icomoon/icomoon.eot?1465184043') format('embedded-opentype'), url('/dysonbuy/font/icomoon/icomoon.woff?1465184043') format('woff'), url('/dysonbuy/font/icomoon/icomoon.ttf?1465184043') format('truetype'), url('/dysonbuy/font/icomoon/icomoon.svg?1465184043') format('svg');
 }
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon', "Roboto", "微軟正黑體", 'Monaco';
@@ -175,13 +175,14 @@
     text-align: center;
     padding: 15px 0;
   }
-  .mcs .mcsb a, .mcs .mcsb .btn {
+  .mcs .mcsb button, .mcs .mcsb .btn {
     margin: 0 0;
     display: block;
     width: 100%;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
+    border-color: transparent;
     border-bottom: 5px solid #9d1a6c;
     background-color: #c83e8e;
     font-size: 1.2em;
@@ -190,12 +191,16 @@
     padding: 10px 10px;
     text-align: center;
     text-decoration: none;
+    cursor: pointer;
   }
-  .mcs .mcsb a:hover {
+  .mcs .mcsb button:focus, .mcs .mcsb .btn:focus {
+    outline: 0;
+  }
+  .mcs .mcsb button:hover {
     background-color: #9d1a6c;
     border-bottom: 5px solid #c83e8e;
   }
-  .mcs .mcsb a:before {
+  .mcs .mcsb button:before {
     display: inline-block;
     margin-right: 10px;
   }
@@ -251,7 +256,7 @@
     font-size: 1.2em;
     border: 1px solid #d7d9d9;
   }
-  .mcsp .mcspb a {
+  .mcsp .mcspb button {
     float: left;
     display: block;
     width: 100%;
@@ -259,6 +264,7 @@
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
+    border-color: transparent;
     border-bottom: 5px solid #9d1a6c;
     background-color: #c83e8e;
     font-size: 1.2em;
@@ -267,8 +273,12 @@
     padding: 10px 10px;
     text-align: center;
     text-decoration: none;
+    cursor: pointer;
   }
-  .mcsp .mcspb a:hover {
+  .mcsp .mcspb button:focus {
+    outline: 0;
+  }
+  .mcsp .mcspb button:hover {
     background-color: #9d1a6c;
     border-bottom: 5px solid #c83e8e;
   }
@@ -336,6 +346,7 @@
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
+    border-color: transparent;
     border-bottom: 5px solid #9d1a6c;
     background-color: #c83e8e;
     font-size: 1.2em;
@@ -344,6 +355,10 @@
     padding: 10px 10px;
     text-align: center;
     text-decoration: none;
+    cursor: pointer;
+  }
+  .pgd .pg .pgr a:focus {
+    outline: 0;
   }
   .pgd .pg .pgr a:hover {
     background-color: #9d1a6c;
@@ -487,13 +502,14 @@
     text-align: center;
     padding: 5px 0;
   }
-  .mcs .mcsb a, .mcs .mcsb .btn {
+  .mcs .mcsb button, .mcs .mcsb .btn {
     margin: 0 80px;
     display: inline-block;
     width: 60%;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
+    border-color: transparent;
     border-bottom: 5px solid #9d1a6c;
     background-color: #c83e8e;
     font-size: 1.4em;
@@ -502,12 +518,16 @@
     padding: 20px 10px;
     text-align: center;
     text-decoration: none;
+    cursor: pointer;
   }
-  .mcs .mcsb a:hover {
+  .mcs .mcsb button:focus, .mcs .mcsb .btn:focus {
+    outline: 0;
+  }
+  .mcs .mcsb button:hover {
     background-color: #9d1a6c;
     border-bottom: 5px solid #c83e8e;
   }
-  .mcs .mcsb a:before {
+  .mcs .mcsb button:before {
     display: inline-block;
     margin-right: 10px;
   }
@@ -571,13 +591,14 @@
     font-size: 1.4em;
     border: 1px solid #d7d9d9;
   }
-  .mcsp .mcspb a {
+  .mcsp .mcspb button {
     float: left;
     display: inline-block;
     width: 40%;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
+    border-color: transparent;
     border-bottom: 5px solid #9d1a6c;
     background-color: #c83e8e;
     font-size: 1.4em;
@@ -586,8 +607,12 @@
     padding: 10px 10px;
     text-align: center;
     text-decoration: none;
+    cursor: pointer;
   }
-  .mcsp .mcspb a:hover {
+  .mcsp .mcspb button:focus {
+    outline: 0;
+  }
+  .mcsp .mcspb button:hover {
     background-color: #9d1a6c;
     border-bottom: 5px solid #c83e8e;
   }
@@ -666,12 +691,13 @@
   .pgd .pg .pgr {
     float: left;
   }
-  .pgd .pg .pgr a {
+  .pgd .pg .pgr button {
     float: left;
     display: inline-block;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
+    border-color: transparent;
     border-bottom: 5px solid #9d1a6c;
     background-color: #c83e8e;
     font-size: 1.4em;
@@ -680,10 +706,14 @@
     padding: 10px 83px;
     text-align: center;
     text-decoration: none;
+    cursor: pointer;
   }
-  .pgd .pg .pgr a:hover {
+  .pgd .pg .pgr button:hover {
     background-color: #9d1a6c;
     border-bottom: 5px solid #c83e8e;
+  }
+  .pgd .pg .pgr button:focus {
+    outline: 0;
   }
 
   a.btnd {

@@ -120,11 +120,12 @@
         text-align: center;
         padding: 15px 0;
 
-        a, .btn {
+        button, .btn {
           margin: 0 0;
           display: block;
           width: 100%;
           @include border-radius(10px);
+          border-color: transparent;
           border-bottom: 5px solid rgba(157, 26, 108, 1.00);
           background-color: rgba(200, 62, 142, 1.00);
 
@@ -134,9 +135,14 @@
           padding: 10px 10px;
           text-align: center;
           text-decoration: none;
+
+          cursor: pointer;
+          &:focus {
+            outline: 0;
+          }
         }
 
-        a {
+        button {
           &:hover {
             background-color: rgba(157, 26, 108, 1.00);
             border-bottom: 5px solid rgba(200, 62, 142, 1.00);
@@ -198,7 +204,7 @@
         border: 1px solid rgba(215, 217, 217, 1.00);
       }
 
-      a {
+      button {
         float: left;
         display: block;
         width: 100%;
@@ -206,6 +212,7 @@
         margin-bottom: 15px;
 
         @include border-radius(10px);
+        border-color: transparent;
         border-bottom: 5px solid rgba(157, 26, 108, 1.00);
         background-color: rgba(200, 62, 142, 1.00);
 
@@ -215,7 +222,10 @@
         padding: 10px 10px;
         text-align: center;
         text-decoration: none;
-
+        cursor: pointer;
+        &:focus {
+          outline: 0;
+        }
         &:hover {
           background-color: rgba(157, 26, 108, 1.00);
           border-bottom: 5px solid rgba(200, 62, 142, 1.00);
@@ -291,6 +301,7 @@
             margin-bottom: 15px;
 
             @include border-radius(10px);
+            border-color: transparent;
             border-bottom: 5px solid rgba(157, 26, 108, 1.00);
             background-color: rgba(200, 62, 142, 1.00);
 
@@ -301,6 +312,10 @@
             text-align: center;
             text-decoration: none;
 
+            cursor: pointer;
+            &:focus {
+              outline: 0;
+            }
             &:hover {
               background-color: rgba(157, 26, 108, 1.00);
               border-bottom: 5px solid rgba(200, 62, 142, 1.00);
@@ -444,11 +459,12 @@
         text-align: center;
         padding: 5px 0;
 
-        a, .btn {
+        button, .btn {
           margin: 0 80px;
           display: inline-block;
           width: 60%;
           @include border-radius(10px);
+          border-color: transparent;
           border-bottom: 5px solid rgba(157, 26, 108, 1.00);
           background-color: rgba(200, 62, 142, 1.00);
 
@@ -458,9 +474,13 @@
           padding: 20px 10px;
           text-align: center;
           text-decoration: none;
+          cursor: pointer;
+          &:focus {
+            outline: 0;
+          }
         }
 
-        a {
+        button {
           &:hover {
             background-color: rgba(157, 26, 108, 1.00);
             border-bottom: 5px solid rgba(200, 62, 142, 1.00);
@@ -515,12 +535,13 @@
         border: 1px solid rgba(215, 217, 217, 1.00);
       }
 
-      a {
+      button {
         float: left;
         display: inline-block;
         width: 40%;
 
         @include border-radius(10px);
+        border-color: transparent;
         border-bottom: 5px solid rgba(157, 26, 108, 1.00);
         background-color: rgba(200, 62, 142, 1.00);
 
@@ -530,7 +551,11 @@
         padding: 10px 10px;
         text-align: center;
         text-decoration: none;
+        cursor: pointer;
 
+        &:focus {
+          outline: 0;
+        }
         &:hover {
           background-color: rgba(157, 26, 108, 1.00);
           border-bottom: 5px solid rgba(200, 62, 142, 1.00);
@@ -596,11 +621,12 @@
         .pgr {
           float: left;
 
-          a {
+          button {
             float: left;
             display: inline-block;
 
             @include border-radius(10px);
+            border-color: transparent;
             border-bottom: 5px solid rgba(157, 26, 108, 1.00);
             background-color: rgba(200, 62, 142, 1.00);
 
@@ -610,10 +636,14 @@
             padding: 10px 83px;
             text-align: center;
             text-decoration: none;
+            cursor: pointer;
 
             &:hover {
               background-color: rgba(157, 26, 108, 1.00);
               border-bottom: 5px solid rgba(200, 62, 142, 1.00);
+            }
+            &:focus {
+              outline: 0;
             }
           }
 
