@@ -142,7 +142,7 @@
   }
   html header > div .tb > div {
     float: left;
-    width: calc(100% / 3);
+    width: calc(100% / 4);
     height: 100%;
     padding-top: 15px;
     text-align: center;
@@ -409,6 +409,7 @@
     color: #727272;
     text-align: left;
     line-height: 2em;
+    border-bottom: 1px solid #e3e5e5;
   }
   html footer {
     width: 100%;
@@ -499,7 +500,7 @@
   }
   html header > div .tb > div {
     float: left;
-    width: calc(100% / 3);
+    width: calc(100% / 4);
     height: 100%;
     padding-top: 30px;
     text-align: center;

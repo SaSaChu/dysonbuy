@@ -84,7 +84,7 @@
 
           > div {
             float: left;
-            width: calc(100% / 3);
+            width: calc(100% / 4);
             height: 100%;
             padding-top: 15px;
 
@@ -392,6 +392,8 @@
               color: rgba(114, 114, 114, 1.00);
               text-align: left;
               line-height: 2em;
+              border-bottom:1px solid rgb(227, 229, 229);
+
             }
           }
         }
@@ -500,7 +502,7 @@
 
           > div {
             float: left;
-            width: calc(100% / 3);
+            width: calc(100% / 4);
             height: 100%;
             padding-top: 30px;
 
