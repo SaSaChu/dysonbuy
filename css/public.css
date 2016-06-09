@@ -142,7 +142,7 @@
   }
   html header > div .tb > div {
     float: left;
-    width: calc(100% / 4);
+    width: calc(100% / 3);
     height: 100%;
     padding-top: 15px;
     text-align: center;
@@ -500,7 +500,7 @@
   }
   html header > div .tb > div {
     float: left;
-    width: calc(100% / 4);
+    width: calc(100% / 3);
     height: 100%;
     padding-top: 30px;
     text-align: center;
@@ -621,6 +621,25 @@
     margin: 0 auto;
     width: 1140px;
     height: 100%;
+    *zoom: 1;
+  }
+  html #middle > div:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+  html #middle > div .saaa {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    font-size: 1.4em;
+    padding: 10px 10px;
+    margin-bottom: 30px;
+    text-align: left;
+    font-weight: bolder;
+    color: #1a1a1a;
+    background-color: lightgray;
   }
   html #middle > div .ma {
     margin-bottom: 80px;
@@ -636,7 +655,7 @@
     border-radius: 50px;
     padding: 15px 15px;
     top: -33px;
-    left: 280px;
+    left: 270px;
     background-color: #ffffff;
     border: 2px solid #ca3d90;
     font-size: 1.8em;

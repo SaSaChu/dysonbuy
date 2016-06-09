@@ -84,7 +84,7 @@
 
           > div {
             float: left;
-            width: calc(100% / 4);
+            width: calc(100% / 3);
             height: 100%;
             padding-top: 15px;
 
@@ -502,7 +502,7 @@
 
           > div {
             float: left;
-            width: calc(100% / 4);
+            width: calc(100% / 3);
             height: 100%;
             padding-top: 30px;
 
@@ -645,6 +645,21 @@
         width: $allwidth;
         height: 100%;
 
+        @include clearfix();
+
+        .saaa {
+          display: inline-block;
+          width: 100%;
+          float: left;
+          font-size: 1.4em;
+          padding: 10px 10px;
+          margin-bottom: 30px;
+          text-align: left;
+          font-weight: bolder;
+          color: rgba(26, 26, 26, 1.00);
+          background-color: rgba(211, 211, 211, 1.00);
+        }
+
         .ma {
           margin-bottom: 80px;
 
@@ -660,7 +675,7 @@
 
             padding: 15px 15px;
             top: -33px;
-            left: 280px;
+            left: 270px;
             background-color: #ffffff;
             border: 2px solid rgba(202, 61, 144, 1.00);
 
