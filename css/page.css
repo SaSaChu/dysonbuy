@@ -309,9 +309,10 @@
     width: 100%;
   }
   .pgd span.pinktype {
-    font-size: 1.2em;
+    display: inline-block;
+    font-size: 1em;
     width: 100%;
-    color: #c43185;
+    color: black;
     padding-bottom: 15px;
   }
   .pgd span.blacktype {

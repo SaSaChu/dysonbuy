@@ -258,9 +258,10 @@
         width: 100%;
 
         &.pinktype {
-          font-size: 1.2em;
+          display: inline-block;
+          font-size: 1em;
           width: 100%;
-          color: rgba(196, 49, 133, 1.00);
+          color: black;
           padding-bottom: 15px;
         }
 
