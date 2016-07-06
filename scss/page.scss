@@ -248,7 +248,7 @@
    }
 
    .pgd {
-      padding-top: 90px;
+      padding-top: 30px;
       border-bottom: 1px solid #e3e5e5;
       @include clearfix();
 
@@ -260,6 +260,7 @@
         &.pinktype {
           display: inline-block;
           font-size: 1em;
+          line-height: 1.6em;
           width: 100%;
           color: black;
           padding-bottom: 15px;
