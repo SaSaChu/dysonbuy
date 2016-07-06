@@ -588,10 +588,14 @@
         margin: 0 auto;
         width: 100%;
 
+        @include clearfix();
+
         &.pinktype {
-          font-size: 1.8em;
+          display: inline-block;
+          font-size: 1em;
+          line-height: 1.6em;
           width: 100%;
-          color: rgba(196, 49, 133, 1.00);
+          color: black;
           padding-bottom: 30px;
         }
 

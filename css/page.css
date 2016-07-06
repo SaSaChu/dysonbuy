@@ -642,11 +642,20 @@
     display: inline-block;
     margin: 0 auto;
     width: 100%;
+    *zoom: 1;
+  }
+  .pgd span:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
   }
   .pgd span.pinktype {
-    font-size: 1.8em;
+    display: inline-block;
+    font-size: 1em;
+    line-height: 1.6em;
     width: 100%;
-    color: #c43185;
+    color: black;
     padding-bottom: 30px;
   }
   .pgd span.blacktype {
